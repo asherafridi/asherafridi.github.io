@@ -83,40 +83,78 @@ const heroSection = () => {
 
 
 
-    gsap.from("#hero-section #hero-text span", {
-        scale: 2,
-        delay: 1,
-        opacity: 0,
+    gsap.from("#hero-section #hero-text .a", {
+        y: 50,
         duration: 0.5,
-        stagger: 0.05,
-        ease: "sine.out"
+        stagger: 0.2,
+        delay:1,
+        opacity: 0,
+    });
+    gsap.from("#hero-section #hero-text .b", {
+        y:50,
+    duration:0.5,
+    stagger:-0.2,
+    
+        delay:1,
+    opacity:0,
     });
 
 
-    
+
     gsap.from(".upper-animate", {
         y: 100,
-        delay: 1,
+        delay: 2,
         opacity: 0,
         duration: 0.5,
         ease: "sine.out"
     });
-    
-    gsap.to("#scroll-text",{
-        opacity:0,
-        duration:1,
-        scrollTrigger:{
-            trigger:"#about-section",
-            start:"top 90%",
-            
-        toggleActions: "play none none reverse",
+
+    gsap.to("#scroll-text", {
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+            trigger: "#about-section",
+            start: "top 90%",
+
+            toggleActions: "play none none reverse",
         }
     });
 
 };
 
 
+const aboutSection = () => {
+    gsap.from("#about-section p, #about-section hr", {
+        y: 100,
+        opacity: 0,
+        delay: 0.5,
+        duration: 0.5,
+        scrollTrigger: {
+            trigger: "#about-section",
+            // markers:true,
+            start: "top center",
+            toggleActions: "play none none reverse",
+        }
+    })
+}
 
+const workSection = () => {
+    gsap.from("#work .heading", {
+        x: -100,
+        opacity: 0,
+        delay: 0.5,
+        duration: 0.5,
+        scrollTrigger: {
+            trigger: "#work",
+            // markers:true,
+            start: "top center",
+            toggleActions: "play none none reverse",
+        }
+    })
+}
+
+aboutSection();
+workSection();
 
 const workItems = document.querySelectorAll(".work");
 
@@ -291,5 +329,5 @@ gsap.from("#achievments h2", {
 
 
 loader();
-navbar();
+// navbar();
 heroSection();
