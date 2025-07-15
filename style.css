@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+@font-face {
+  font-family: Gilroy;
+  src: url(./fonts/Gilroy-Regular.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +11,7 @@
 }
 
 body {
-    font-family: 'Gilroy-Regular ☞';
+    font-family: 'Gilroy';
     background-color: #000;
     color: #fff;
     overflow-x: hidden;
