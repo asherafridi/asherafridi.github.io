@@ -507,7 +507,7 @@ body {
 
     #hero-section {
         height: 100vh;
-        padding: 70px 40px;
+        padding: 50px 20px;
     }
 
 
@@ -529,8 +529,8 @@ body {
     }
 
     #hero-section .middle-part img {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 
     #hero-section .services p {
@@ -566,6 +566,9 @@ body {
         padding: 20px 20px;
     }
 
+    .techItem-description span {
+    font-size: 14px;
+}
     #achievments {
         padding: 20px 20px;
     }
