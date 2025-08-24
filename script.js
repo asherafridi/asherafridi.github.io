@@ -147,7 +147,7 @@ const workSection = () => {
         scrollTrigger: {
             trigger: "#work",
             // markers:true,
-            start: "top center",
+            start: "top bottom",
             toggleActions: "play none none reverse",
         }
     })
