@@ -231,38 +231,37 @@ body {
 
 .work .details h3 {
     height: 40px;
-    background: #fff;
-    color: #000;
+    background: #111;
+    color: #fff;
     font-size: 20px;
-    line-height: 0px;
     padding: 10px 50px;
-    border-radius: 30px;
+    line-height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
+    display: block;
 }
 
 .work .details a {
-    width: 60px;
-    display: none;
-    height: 60px;
-    border-radius: 50%;
-    background: #fff;
-    color: #000;
-    font-size: 36px;
-    line-height: 0;
+    width: 40px;
+    height: 40px;
+    background: #111;
+    color: #fff;
     display: flex;
+    font-size: 18px;
     justify-content: center;
     align-items: center;
-    display: none;
+    display: flex;
+}
+.work .details a i{
+    display: block;
 }
 
 
 
 .work .hover {
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 240px;
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -279,9 +278,9 @@ body {
 }
 
 .work .hover h3 {
-    text-align: right;
+    text-align: left;
     font-size: 18px;
-    display: none;
+    display: block;
 }
 
 .work .hover .hover-image {
@@ -292,14 +291,14 @@ body {
 
 
 #work-1 {
-    background: url("./static/works/work-1.webp");
+    background: url("./static/works/work-1.png");
 
     background-position: center;
     background-size: cover;
 }
 
 #work-2 {
-    background: url("./static/works/work-2.webp");
+    background: url("./static/works/work-2.png");
     background-position: center;
     background-size: cover;
 }
@@ -311,13 +310,13 @@ body {
 }
 
 #work-4 {
-    background: url("./static/works/work-4.webp");
+    background: url("./static/works/work-4.png");
     background-position: center;
     background-size: cover;
 }
 
 #work-5 {
-    background: url("./static/works/work-5.webp");
+    background: url("./static/works/work-5.png");
     background-position: center;
     background-size: cover;
 }

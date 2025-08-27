@@ -147,7 +147,7 @@ const workSection = () => {
         scrollTrigger: {
             trigger: "#work",
             // markers:true,
-            start: "top bottom",
+            start: "top 80%",
             toggleActions: "play none none reverse",
         }
     })
@@ -193,7 +193,7 @@ workItems.forEach((work) => {
     work.addEventListener("mouseleave", () => {
         gsap.to(workImage, { opacity: 0, duration: 0.2 });
         gsap.to(overlay, { background: 'rgba(0, 0, 0, 0)', duration: 0.2 });
-        gsap.set(linkButton, { display: "none" });
+        // gsap.set(linkButton, { display: "none" });
     });
 });
 
